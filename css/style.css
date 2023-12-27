@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+}
+body{
+     background: black;
+
+}
+
+
+nav{
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    justify-content: space-around;
+    position: fixed;
+   
+}
+.logo{
+    color: white;
+    padding-top: 20px;
+   
+}
+span{
+    color: crimson;
+}
+.list-item{
+    display: flex;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+ul li a:hover{
+    color: crimson;
+    text-decoration: underline;
+}
+
+.left{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 12%;
+}
+.h-hed{
+    color: white;
+    line-height: 5;
+    text-align: center;
+    text-decoration: underline;
+}
+.h-hed1{
+    color: white;
+    font-size: 2.9rem;
+}
+
+.box1{
+    border: 2px solid crimson;
+    height: 400px;
+}
+.box2{
+    border: 2px solid crimson;
+}
+.box3{
+    border: 2px solid crimson;
+}
+.card1{
+    border: 2px solid crimson;
+    
+    height: 300px;
+}
+.card2{
+    border: 2px solid crimson;
+    
+}
+.card3{
+    border: 2px solid crimson;
+}
+
+
+.cold{
+    display: flex;
+    justify-content: center;
+}
+.work-hed h1{
+    font-size: 4.4rem;
+    color: white;
+    background-color: transparent !important;
+}
+
+.para{
+    background-color: crimson;
+}
+.box5{
+    width: 400px;
+    height: 300px;
+    border: 2px solid crimson;
+    background-color: crimson;
+    margin: 8rem 10px;
+    /* margin-right: 2%; */
+}
+.box6{
+    width: 400px;
+    height: 300px;
+    border: 2px solid crimson;
+    margin: 8rem 9px;
+    /* margin-right: 5%; */
+}
+.box7{
+    width: 400px;
+    height: 300px;
+    border: 2px solid crimson;
+    background-color: crimson;
+    margin: 8rem 9px;
+    /* margin-right: 5%; */
+
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    
+}
+.mark{
+    width: 289px;
+    height: 360px;
+    margin: 2rem 2rem;
+    /* background: #080808; */
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0,.5);
+    transition: 0.5s ease-in-out;
+}
+.mark:hover{
+    transform: translateY(20px);
+    background-color: transparent !important;
+}
+.mark:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(13, 14, 13, 0.5), rgb(220, 20, 60));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.mark:hover::before{
+    opacity: 1;
+}
+.mark > h1:hover::before{
+    background-color: transparent !important;
+}
+.mark img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mark .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+.mark:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+    background: transparent;
+}
+.mark:hover h1,p{
+    background-color: transparent !important;
+}
+.mark .info h1{
+    margin: 0;
+}
+.mark .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.mark .info .btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.mark .info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.reft{
+    display: flex;
+    justify-content: space-around;
+    padding: 8%;
+}
+input{
+    width: 500px;
+    padding: 8px;
+    /* margin: 10px 0px; */
+}
+ #name{
+    margin: 13px 0px;
+    border: #000;
+   background-color: #2d2b2b;
+}
+#email{
+    margin: 13px 0px;
+    border: #000;
+   background-color: #2d2b2b;
+}
+#textarea{
+    margin: 13px 0px;
+    padding: 75px;
+    border: #000;
+   background-color: #2d2b2b;
+}
+#c-btnn{
+    background-color: crimson;
+    padding: 6px;
+    width: 120px;
+    border: #000;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    color: white;
+}
+.icon i{
+    padding: 10px 10px;
+    font-size: 2.2em;
+}
+.icon p{
+    margin:  20px 0px;
+  
+}
+#c-btn{
+    background-color: crimson;
+    padding: 6px;
+    width: 120px;
+    border: #000;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    color: white;
+    margin: 20px 0px;
+}
